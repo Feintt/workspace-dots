@@ -1,0 +1,19 @@
+id = "feintt/workspace-dots"
+name = "Workspace Dots"
+version = "1.0.0"
+plugin_api = 43
+author = "Feintt"
+license = "MIT"
+icon = "workspaces"
+description = "Eight global Hyprland workspaces with focused and occupied states in a Noctalia bar widget."
+dependencies = ["hyprctl", "python3"]
+tags = ["bar", "hyprland", "indicator", "utility"]
+
+[[widget]]
+id = "dots"
+entry = "widget.luau"
+hover_highlight = false
+
+[[service]]
+id = "state"
+entry = "service.luau"
